@@ -1,0 +1,370 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.header_pitchManage {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    border-bottom: 4px solid #4CAF50;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+.menu2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #343a40;
+    margin-top: 10px;
+    /* Khoảng cách giữa header_content và menu */
+}
+
+.menu2 ul li input {
+    position: absolute;
+    margin-top: -80px;
+
+}
+
+.butthem,
+.butsua {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Phong cách nút Thêm */
+.butthem {
+    background-color: #28a745;
+    color: white;
+}
+
+.butthem:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.butsua {
+    background-color: #28a745;
+    color: white;
+}
+
+.butsua:hover {
+    background-color: #218838;
+    /* Đậm hơn khi hover */
+    transform: scale(1.05);
+    /* Tăng kích thước khi hover */
+}
+
+.menu2 ul li a img {
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -80px;
+}
+
+.menu2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    /* Căn giữa các mục menu theo chiều ngang */
+    padding-right: 200px;
+}
+
+.menu2 ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.menu2 ul li a:hover {
+    text-decoration: underline;
+}
+
+#Adminpic {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -6px;
+}
+
+.body_pitchManage {
+    width: 100%;
+    height: 1100px;
+    background-image: url("./img/Bodyimg.jpg");
+}
+
+
+.iconeye,
+.icontrash {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+button[type='submit'] {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+button[type='submit']:hover img {
+    opacity: 0.7;
+}
+
+
+
+.table {
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+
+/* Modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 730px;
+    margin-top: 50px;
+}
+
+.modal-content label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-content input[type=text],
+.modal-content input[type=time] {
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#pitchForm2 select {
+    width: 64%;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.modal-content input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.modal2 {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content2 {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 760px;
+    margin-top: 40px;
+}
+
+/* CSS để làm đẹp label và input trong form */
+.modal-content2 label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-content2 input[type=text],
+.modal-content input[type=time] {
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.modal-content2 input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.modal-content2 input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* CSS để làm đẹp label và input trong form */
+.modal-content3 {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 310px;
+    margin-top: 200px;
+}
+
+.modal-content3 label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modal-content3 input[type=text],
+.modal-content input[type=time] {
+    width: calc(100% - 160px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.modal-content3 input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.modal-content3 input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* CSS cho gallery hình ảnh */
+.modal4 {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content4 {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%;
+    height: 370px;
+    margin-top: 200px;
+}
+
+.img-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.img-gallery__item {
+    overflow: hidden;
+}
+
+.img-gallery__item img {
+    width: 100%;
+    height: 150px;
+}

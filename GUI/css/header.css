@@ -1,0 +1,73 @@
+/* General styling for the header container */
+.contranner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #218838;
+    /* Light background color for header */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Styling for the logo section */
+.contranner .logo img {
+    height: 50px;
+    /* Adjust as needed */
+}
+
+/* Styling for the wrapper containing the menu */
+.contranner .wrapper {
+    flex-grow: 1;
+}
+
+/* Remove default list styling */
+.contranner .wrapper .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    /* Align menu items to the right */
+}
+
+/* Styling for each menu item */
+.contranner .wrapper .menu li {
+    margin: 0 15px;
+    /* Space between menu items */
+}
+
+/* Styling for the links */
+.contranner .wrapper .menu li a {
+    color: whitesmoke;
+    /* Text color for links */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 16px;
+    /* Font size */
+    padding: 10px 15px;
+    /* Padding for clickable area */
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.contranner .wrapper .menu li a:hover {
+    background-color: #e2e6ea;
+    /* Slightly darker background on hover */
+    color: #007bff;
+    /* Blue color for text on hover */
+    border-radius: 5px;
+    /* Rounded corners on hover */
+}
+
+/* Active link styling */
+.contranner .wrapper .menu li a.active {
+    background-color: #007bff;
+    /* Background color for active link */
+    color: white;
+    /* White text for active link */
+    border-radius: 5px;
+    /* Rounded corners for active link */
+}
